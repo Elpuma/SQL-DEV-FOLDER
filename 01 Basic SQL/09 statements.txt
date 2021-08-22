@@ -1,0 +1,8 @@
+In SQL, you can think of a statement as (select all that apply):
+A piece of correctly written SQL code.
+A way to manipulate data stored in a database.
+A sentence.
+A way to read data stored in a database.
+
+In the following lessons we will focus on which type of query?
+SELECT
