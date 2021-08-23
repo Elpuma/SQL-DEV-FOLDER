@@ -1,0 +1,5 @@
+SQL : a language that allow us to access data stored in a database
+Database: a collection of tables that share connected data stored in a computer
+web_events: a table name in the Parch & Posey database
+primary_poc: a column name in the Parch & Posey database
+ERD: a diagram that shows how data is structured in a database
