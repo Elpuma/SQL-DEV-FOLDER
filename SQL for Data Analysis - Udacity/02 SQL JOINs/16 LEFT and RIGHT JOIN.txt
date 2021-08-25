@@ -1,0 +1,53 @@
+Select all of the below that are true.
+
+    A **LEFT JOIN** and **RIGHT JOIN** do the same thing if we change the tables that are in the **FROM** and **JOIN** statements.
+    A **LEFT JOIN** will **at least** return all the rows that are in an **INNER JOIN**.
+    **JOIN** and **INNER JOIN** are the same.
+    A **LEFT OUTER JOIN** is the same as **LEFT JOIN**.
+
+Above are two small tables for you to test your knowledge of JOINs. You can click on the image to get a better view.
+    Country has 6 rows and 2 columns:
+    countryid and countryName
+    State has 6 rows and 3 columns:
+    stateid, countryid, and stateName
+    Use the above tables to determine the solution to the following questions.
+    State.countryid             The foreign key that would be used in JOINING the tables
+    State.stateName             -
+    Country.countryName         -
+    State.stateid               The primary key of the STATE table
+    Country.countryid           The primary key of the COUNTRY table
+
+The above two tables are given again just for minimizing scrolling. If you were to perform the following query:
+SELECT c.countryid, c.countryName, s.stateName
+FROM Country c
+JOIN State s
+ON c.countryid = s.countryid;
+
+Match the results of the query to the description.
+    4       
+    1
+    5
+    7
+    3       the number of columns in the resulting table
+    12
+    8
+    6       the number of rows in the resulting table
+    0       the number of times countryid 6 will show up in the resulting table
+    2       the number of times countryid 1 will show up in resulting table
+
+The above two tables are given again just for minimizing scrolling. If you were to perform the following query:
+SELECT c.countryid, c.countryName, s.stateName
+FROM Country c
+LEFT JOIN State s
+ON c.countryid = s.countryid;
+    0       
+    7
+    1       the number of times countryid 6 will show up in the resulting table
+    8       the number of rows in resulting table
+    5
+    10
+    3       the number of columns in resulting table
+    6       
+    9
+    4
+    2       the number of times countryid 1 will show up in resulting table
