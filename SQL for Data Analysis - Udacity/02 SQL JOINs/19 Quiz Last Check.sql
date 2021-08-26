@@ -67,7 +67,7 @@ ON a.sales_rep_id = s.id
 JOIN region r
 ON s.region_id = r.id
 AND (o.standard_qty > 100) AND (o.poster_qty > 50)
-ORDER BY unit_price
+ORDER BY unit_price;
 
 /*Provide the name for each region for every order, as well as the account name and the unit price they paid (total_amt_usd/total) for the order. 
 However, you should only provide the results if the standard order quantity exceeds 100 and the poster order quantity exceeds 50. 
@@ -83,7 +83,7 @@ ON a.sales_rep_id = s.id
 JOIN region r
 ON s.region_id = r.id
 AND (o.standard_qty > 100) AND (o.poster_qty > 50)
-ORDER BY unit_price DESC
+ORDER BY unit_price DESC;
 
 /*What are the different channels used by account id 1001? 
 Your final table should have only 2 columns: account name and the different channels. 
@@ -102,7 +102,4 @@ FROM orders o
 JOIN accounts a
 ON a.id = o.account_id
 AND o.occurred_at >= '2015-01-01' AND o.occurred_at <= '2016-01-01'
-ORDER BY occurred_at
-
-
-
+ORDER BY occurred_at;
