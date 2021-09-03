@@ -1,0 +1,1 @@
+--this ended up being just a clarification about readability and styling of stacked sql subqueries.
