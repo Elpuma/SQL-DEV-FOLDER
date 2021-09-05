@@ -127,3 +127,8 @@ SELECT AVG(avg_spent)
 FROM t1
 WHERE avg_spent > (SELECT * FROM t2)
 ;
+
+/*Look back through your solutions to subqueries and CTEs (WITH statements), which do you find more readable? Which is better for performance?
+
+X CTEs are more readable.
+X CTEs are more efficient, as the tables aren't recreated with each subquery portion.*/
