@@ -50,7 +50,7 @@ SELECT r.name AS region_name, COUNT(o.total) AS total
 										ORDER BY 2 DESC) t1)
 ;
 
-/*For the account that purchased the most (in total over their lifetime as a customer) standard_qty paper, how many accounts still had more in total purchases?*/
+/* 3. For the account that purchased the most (in total over their lifetime as a customer) standard_qty paper, how many accounts still had more in total purchases?*/
 SELECT COUNT(*) AS amt_of_accs
 FROM (SELECT acc, total_qty --lists accounts with totals > t1
 		FROM (SELECT a.name AS acc, SUM(o.total) AS total_qty
