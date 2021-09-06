@@ -41,5 +41,5 @@ SELECT LEFT(primary_poc, STRPOS(primary_poc, ' ')-1)
 		|| RIGHT(LOWER((RIGHT(primary_poc, LENGTH(primary_poc)-STRPOS(primary_poc, ' ')))),1)
 		|| LENGTH(RIGHT(primary_poc, LENGTH(primary_poc)-STRPOS(primary_poc, ' ')))
 		|| REPLACE(UPPER(name),' ', '') AS password
-FROM accounts AS a
+FROM accounts AS
 ;
