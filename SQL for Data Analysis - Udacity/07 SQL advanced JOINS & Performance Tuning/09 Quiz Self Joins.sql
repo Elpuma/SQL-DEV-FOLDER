@@ -20,6 +20,6 @@ SELECT w1.id AS w1_id,
   FROM web_events w1
  LEFT JOIN web_events w2
    ON w1.account_id = w2.account_id
-  AND w2.occurred_at > w1.occurred_at
-  AND w2.occurred_at <= w1.occurred_at + INTERVAL '1 days'
-ORDER BY w1.account_id, w1.occurred_at
+  AND w1.occurred_at > w2.occurred_at
+  AND w1.occurred_at <= w2.occurred_at + INTERVAL '1 days'
+ORDER BY w1.account_id, w2.occurred_at
